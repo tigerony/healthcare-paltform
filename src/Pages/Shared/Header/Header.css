@@ -18,3 +18,8 @@
         flex-direction: column;
     }
 }
+.user-img {
+    width: 36px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}

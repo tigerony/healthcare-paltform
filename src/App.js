@@ -12,6 +12,7 @@ import Login from './Pages/User/Login/Login';
 import Register from './Pages/User/Register/Register';
 import AuthProvider from './contexts/AuthProvider';
 import DoctorDetails from './Pages/Details/DoctorDetails/DoctorDetails';
+import PrivateRoute from './Pages/User/PrivateRoute/PrivateRoute';
 
 function App() {
 
@@ -33,9 +34,9 @@ function App() {
             <Route exact path="/doctors">
               <Doctors></Doctors>
             </Route>
-            <Route exact path="/doctors/:docId">
+            <PrivateRoute exact path="/doctors/:docId">
               <DoctorDetails></DoctorDetails>
-            </Route>
+            </PrivateRoute>
             <Route path="/about">
               <About></About>
             </Route>
