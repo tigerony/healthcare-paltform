@@ -11,6 +11,7 @@ import About from './Pages/About/About';
 import Login from './Pages/User/Login/Login';
 import Register from './Pages/User/Register/Register';
 import AuthProvider from './contexts/AuthProvider';
+import DoctorDetails from './Pages/Details/DoctorDetails/DoctorDetails';
 
 function App() {
 
@@ -29,8 +30,11 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
-            <Route path="/doctors">
+            <Route exact path="/doctors">
               <Doctors></Doctors>
+            </Route>
+            <Route exact path="/doctors/:docId">
+              <DoctorDetails></DoctorDetails>
             </Route>
             <Route path="/about">
               <About></About>

@@ -15,6 +15,7 @@ const Doctor = (props) => {
                     <Card.Text>
                         <p>{role} of <span className="fw-bold">{medical}</span></p>
                     </Card.Text>
+                    <button className="btn btn-outline-dark">Read More</button>
                 </Card.Body>
             </Card>
         </Col>
