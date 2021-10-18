@@ -8,7 +8,6 @@ import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
     const { user, logout } = useAuth();
-    console.log(user.photoURL)
     const history = useHistory();
 
     const handleLogin = () => {
