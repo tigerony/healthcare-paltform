@@ -4,7 +4,8 @@ import useAuth from '../../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
-    const { signInWithGoogle } = useAuth();
+    const { user, signInWithGoogle, signInWithGithub, logout } = useAuth();
+    console.log(user);
 
     return (
         <div className="container my-5 py-5 form-container">
@@ -26,7 +27,16 @@ const Login = () => {
                 </Form>
                 <div className="text-center my-4">
                     <p>or</p>
-                    <button className="btn btn-secondary" onClick={signInWithGoogle}>Google Sign In</button>
+                    {user.email ? <div>
+                        <img src={user.photoURL} alt="" />
+                        <h3>{user.displayName}</h3>
+                        <button className="btn btn-outline-dark" onClick={logout}>Logout</button>
+                    </div>
+                        :
+                        <div>
+                            <button className="btn btn-secondary me-2" onClick={signInWithGoogle}>Google Sign In</button>
+                            <button className="btn btn-secondary" onClick={signInWithGithub}>Github Sign In</button>
+                        </div>}
                 </div>
             </div>
         </div>
