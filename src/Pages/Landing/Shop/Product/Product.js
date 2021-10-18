@@ -1,28 +1,27 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Doctor.css';
 
-const Doctor = (props) => {
-    console.log(props.doctor);
-    const { id, name, imgReg, role, medical } = props.doctor;
+const Product = (props) => {
+    const { name, image, price } = props.product;
+    console.log(props);
 
     return (
         <Col>
             <Card className="h-100 rounded-3 border-0 item-card">
-                <Card.Img variant="top" src={imgReg} />
+                <Card.Img variant="top" src={image} />
                 <Card.Body className="bg-light">
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
-                        <p>{role} of <span className="fw-bold">{medical}</span></p>
+                        <h3>${price}</h3>
                     </Card.Text>
-                    <Link to={`/doctors/${id}`}>
+                    {/* <Link to={`/doctors/${id}`}>
                         <button className="btn btn-outline-dark">Read More</button>
-                    </Link>
+                    </Link> */}
                 </Card.Body>
             </Card>
         </Col>
     );
 };
 
-export default Doctor;
+export default Product;
