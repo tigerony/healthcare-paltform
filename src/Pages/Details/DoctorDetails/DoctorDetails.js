@@ -1,9 +1,12 @@
 import React from 'react';
+import { useParams } from 'react-router';
 
 const DoctorDetails = () => {
+    const { docId } = useParams();
+
     return (
-        <div>
-            <h5>this is doctor details</h5>
+        <div className="container my-5 py-4">
+            <h5>this is doctor details of {docId}</h5>
         </div>
     );
 };

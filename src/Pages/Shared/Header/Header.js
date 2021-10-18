@@ -1,11 +1,20 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import './Header.css';
 
 import logo from '../../../images/logo.png';
 
 const Header = () => {
+    const history = useHistory();
+
+    const handleLogin = () => {
+        history.push('/login');
+    }
+
+    const handleRegister = () => {
+        history.push('/register');
+    }
 
     return (
         <Navbar bg="light" variant="light" fixed="top">
@@ -17,6 +26,10 @@ const Header = () => {
                     <NavLink to="/doctors">Doctors</NavLink>
                     <NavLink to="/about">About</NavLink>
                 </Nav>
+                <div>
+                    <button className="btn btn-outline-secondary me-2" onClick={handleLogin}>Login</button>
+                    <button className="btn btn-warning" onClick={handleRegister}>Register</button>
+                </div>
             </Container>
         </Navbar>
     );

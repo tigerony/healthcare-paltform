@@ -1,10 +1,11 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Doctor.css';
 
 const Doctor = (props) => {
     console.log(props.doctor);
-    const { name, imgReg, role, medical } = props.doctor;
+    const { id, name, imgReg, role, medical } = props.doctor;
 
     return (
         <Col>
@@ -15,7 +16,8 @@ const Doctor = (props) => {
                     <Card.Text>
                         <p>{role} of <span className="fw-bold">{medical}</span></p>
                     </Card.Text>
-                    <button className="btn btn-outline-dark">Read More</button>
+                    <Link to={`/doctors/${id}`}>
+                        <button className="btn btn-outline-dark">Read More</button></Link>
                 </Card.Body>
             </Card>
         </Col>
