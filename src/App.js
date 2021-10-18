@@ -52,6 +52,40 @@ function App() {
           <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
+
+      {/* <BrowserRouter>
+        <Header></Header>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
+          </Route>
+          <Route exact path="/doctors">
+            <Doctors></Doctors>
+          </Route>
+          <Route exact path="/doctors/:docId">
+            <DoctorDetails></DoctorDetails>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
+          </Route>
+          <Route exact path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+        <Footer></Footer>
+      </BrowserRouter> */}
     </div>
   );
 }
