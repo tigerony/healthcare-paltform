@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <div>
-            <Navbar bg="light" variant="light">
+            <Navbar bg="light" variant="light" fixed="top">
                 <Container>
                     <img style={{ width: '48px', padding: '4px' }} src={logo} alt="" />
                     <Nav>

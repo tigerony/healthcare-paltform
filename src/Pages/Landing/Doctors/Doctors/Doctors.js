@@ -6,15 +6,16 @@ const Doctors = () => {
     const [doctors, setDoctors] = useState([]);
 
     useEffect(() => {
-        fetch('/docs.json')
+        fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/doctors.json')
             .then(response => response.json())
             .then(data => setDoctors(data));
     }, [])
 
     return (
         <div className="container my-5">
+            <h2 className="text-center text-info my-5">Our Team</h2>
             <Row sm={1} md={2} lg={3} className="text-center g-5">
-                {doctors.slice(0, 6).map(doctor => <Doctor
+                {doctors.map(doctor => <Doctor
                     key={doctor.id}
                     doctor={doctor}
                 ></Doctor>)}
