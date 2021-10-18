@@ -26,6 +26,7 @@ const Header = () => {
                     <NavLink to="/home">Home</NavLink>
                     <NavLink to="/services">Services</NavLink>
                     <NavLink to="/doctors">Doctors</NavLink>
+                    <NavLink to="/shop">Shop</NavLink>
                     <NavLink to="/about">About</NavLink>
                 </Nav>
                 {user.email ? <div className="d-flex align-items-center">
