@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="bg-dark text-light py-5">
             <div className="container">
-                <Row sm={1} md={2} lg={4}>
+                <Row xs={1} md={2} lg={4}>
                     <Col>
                         <p>Why Us</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae quia dolores possimus dolorum, fugiat ipsam recusandae maxime excepturi dolore tenetur nesciunt sed odio illo facere quis veritatis voluptate? Deserunt ad beatae vero perferendis error quia ullam eius repellat nihil? Debitis, consequuntur.</p>
