@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1001,
+        "name": "Brenda Gray",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-1.jpg",
+        "age": 23,
+        "company": "Desert Rose Software",
+        "position": "Web Developer",
+        "country": "US",
+        "salary": 25000
+    },
+    {
+        "id": 1002,
+        "name": "Donna Cox",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-2.jpg",
+        "age": 21,
+        "company": "Jupiter Programmers",
+        "position": "Web Developer",
+        "country": "US",
+        "salary": 35000
+    },
+    {
+        "id": 1003,
+        "name": "Harold Cox",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-3.jpg",
+        "age": 27,
+        "company": "Peace OS",
+        "position": "React Developer",
+        "country": "UK",
+        "salary": 28000
+    },
+    {
+        "id": 1004,
+        "name": "Russell White",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-4.jpg",
+        "age": 24,
+        "company": "Standard Software Technology",
+        "position": "React Developer",
+        "country": "US",
+        "salary": 32000
+    },
+    {
+        "id": 1005,
+        "name": "Matthew Martin",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-5.jpg",
+        "age": 28,
+        "company": "TechSphere",
+        "position": "React Developer",
+        "country": "US",
+        "salary": 41000
+    },
+    {
+        "id": 1006,
+        "name": "Juan Allen",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-6.jpg",
+        "age": 23,
+        "company": "Overdrivers",
+        "position": "Node JS Developer",
+        "country": "US",
+        "salary": 45000
+    },
+    {
+        "id": 1007,
+        "name": "Fred Bell",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-7.jpg",
+        "age": 25,
+        "company": "SkyNet",
+        "position": "Web Developer",
+        "country": "UK",
+        "salary": 40000
+    },
+    {
+        "id": 1008,
+        "name": "Annie Ramirez",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-8.jpg",
+        "age": 21,
+        "company": "Global Software",
+        "position": "Node JS Developer",
+        "country": "UK",
+        "salary": 38000
+    },
+    {
+        "id": 1009,
+        "name": "Elizabeth Davis",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-9.jpg",
+        "age": 26,
+        "company": "Surefire Software",
+        "position": "Web Developer",
+        "country": "US",
+        "salary": 26000
+    },
+    {
+        "id": 1010,
+        "name": "Anna Thomas",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-10.jpg",
+        "age": 23,
+        "company": "Organic Applications",
+        "position": "Web Developer",
+        "country": "Canada",
+        "salary": 24000
+    },
+    {
+        "id": 1011,
+        "name": "Sara Anderson",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-11.jpg",
+        "age": 22,
+        "company": "Optimum Software Co",
+        "position": "Full Stack Developer",
+        "country": "UK",
+        "salary": 32000
+    },
+    {
+        "id": 1012,
+        "name": "Thomas Cook",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-12.jpg",
+        "age": 21,
+        "company": "Subliminal Software",
+        "position": "Web Developer",
+        "country": "US",
+        "salary": 30000
+    },
+    {
+        "id": 1013,
+        "name": "Victor Carter",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-13.jpg",
+        "age": 31,
+        "company": "Beta Byte Techs",
+        "position": "Full Stack Developer",
+        "country": "Canada",
+        "salary": 22000
+    },
+    {
+        "id": 1014,
+        "name": "Ralph Roberts",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-14.jpg",
+        "age": 35,
+        "company": "BuzzWare",
+        "position": "Web Developer",
+        "country": "UK",
+        "salary": 29000
+    },
+    {
+        "id": 1015,
+        "name": "Gary Simmons",
+        "img": "https://raw.githubusercontent.com/imprantu/fake-devs/main/img/dev-15.jpg",
+        "age": 45,
+        "company": "ExaminWare",
+        "position": "Full Stack Developer",
+        "country": "US",
+        "salary": 33000
+    }
+]

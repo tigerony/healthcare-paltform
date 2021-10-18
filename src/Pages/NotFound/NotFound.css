@@ -1,0 +1,12 @@
+.error {
+    height: 60vh;
+}
+.redir-url {
+    color: blue;
+    background-color: lightcyan;
+    text-decoration: none;
+}
+.redir-url:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
