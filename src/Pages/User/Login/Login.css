@@ -1,5 +1,5 @@
 .form-container {
-    height: 70vh;
+    min-height: 70vh;
 }
 .user-form {
     max-width: 520px;

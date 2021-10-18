@@ -11,3 +11,10 @@
     background-color: #222;
     color: #fff;
 }
+
+@media only screen and (max-width: 768px) {
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

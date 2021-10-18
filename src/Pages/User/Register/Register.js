@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 
 const Register = () => {
     return (
-        <div className="container my-5 form-container">
+        <div className="container my-5 py-5 form-container">
             <div className="shadow-lg rounded-3 mx-auto user-form">
                 <h3 className="mb-4 text-primary">Registration</h3>
                 <Form>
