@@ -44,8 +44,3 @@ const Header = () => {
 };
 
 export default Header;
-
-/*
-
-className="d-flex align-items-center"
-*/

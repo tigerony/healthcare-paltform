@@ -4,6 +4,7 @@ import './ProductDetails.css';
 
 const ProductDetails = () => {
     const { pdId } = useParams();
+
     const [prodDetails, SetProdDetails] = useState([]);
     const [details, setDetails] = useState({});
 
