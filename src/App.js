@@ -15,6 +15,7 @@ import DoctorDetails from './Pages/Details/DoctorDetails/DoctorDetails';
 import PrivateRoute from './Pages/User/PrivateRoute/PrivateRoute';
 import Products from './Pages/Landing/Shop/Products/Products';
 import ProductDetails from './Pages/Details/ProductDetails/ProductDetails';
+import ServiceDetails from './Pages/Details/ServiceDetails/ServiceDetails';
 
 function App() {
 
@@ -33,8 +34,8 @@ function App() {
             <Route exact path="/services">
               <Services></Services>
             </Route>
-            <PrivateRoute path="/services/:svId">
-              <Services></Services>
+            <PrivateRoute path="/services/:srvId">
+              <ServiceDetails></ServiceDetails>
             </PrivateRoute>
             <Route exact path="/doctors">
               <Doctors></Doctors>

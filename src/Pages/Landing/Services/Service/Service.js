@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = (props) => {
-    const { name, image } = props.service;
+    const { id, name, image } = props.service;
 
     return (
         <Col>
@@ -12,6 +13,9 @@ const Service = (props) => {
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                 </Card.Body>
+                <Link to={`/services/${id}`}>
+                    <button className="btn btn-outline-dark">Details</button>
+                </Link>
             </Card>
         </Col>
     );
