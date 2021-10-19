@@ -1,0 +1,15 @@
+.doc-info-card {
+    max-width: 560px;
+}
+.doctor-info img {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.work-time {
+    max-width: 420px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
