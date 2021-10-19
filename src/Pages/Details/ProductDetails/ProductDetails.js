@@ -20,11 +20,11 @@ const ProductDetails = () => {
 
     return (
         <div className="container my-5">
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center bg-light rounded-3 pd-detail-card">
                 <div className="prod-img">
                     <img src={details?.image} alt="" />
                 </div>
-                <div className="ms-3">
+                <div className="mx-3">
                     <h3>{details?.name}</h3>
                     <p className="fs-4 fw-bold">${details?.price}</p>
                     <button className="btn btn-secondary">Buy Now</button>

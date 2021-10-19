@@ -16,7 +16,7 @@ const Product = (props) => {
                         <h3>${price}</h3>
                     </Card.Text>
                     <Link to={`/products/${id}`}>
-                        <button className="btn btn-warning">Details</button>
+                        <button className="btn btn-outline-secondary">Details</button>
                     </Link>
                 </Card.Body>
             </Card>

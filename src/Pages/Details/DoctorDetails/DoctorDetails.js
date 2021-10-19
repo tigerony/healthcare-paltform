@@ -33,7 +33,7 @@ const DoctorDetails = () => {
                     <hr />
                     <div>
                         <p className="fs-4 fw-bold text-center text-info">Patient Check Up Time</p>
-                        <Row sm={2} md={2} lg={2} className="text-center border border-1 my-2 g-3 work-time">
+                        <Row sm={2} md={2} lg={2} xl={2} className="text-center border border-1 my-2 g-3 work-time">
                             <Col>
                                 <p>Monday-Friday</p>
                                 <p>Saturday</p>

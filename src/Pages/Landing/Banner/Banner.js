@@ -17,7 +17,7 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h5>Modern Medical Equipment</h5>
+                        <h5 className="text-light">Modern Medical Equipment</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,7 +27,7 @@ const Banner = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h5>Digital Laboratory with High Configuration Instruments</h5>
+                        <h5 className="text-light">Digital Laboratory with High Configuration Instruments</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -37,7 +37,7 @@ const Banner = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h5>Most Experienced Doctors</h5>
+                        <h5 className="text-light">Most Experienced Doctors</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -47,7 +47,7 @@ const Banner = () => {
                         alt="Fourth slide"
                     />
                     <Carousel.Caption>
-                        <h5>24/7 AC and Non-AC Ambulance Service</h5>
+                        <h5 className="text-light">24/7 AC and Non-AC Ambulance Service</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
