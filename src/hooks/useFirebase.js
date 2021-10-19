@@ -15,15 +15,15 @@ const useFirebase = () => {
 
     const signInWithGoogle = () => {
         signInWithPopup(auth, googleProvider)
-        /* .then(result => {
-            setUser(result.user);
-        })
-        .catch(error => {
-            setError(error.message);
-        })
-        .finally(() => {
-            setLoading(false);
-        }) */
+            .then(result => {
+                setUser(result.user);
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+            .finally(() => {
+                setLoading(false);
+            })
     };
 
     const signInWithGithub = () => {

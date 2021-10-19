@@ -16,11 +16,6 @@ const Register = () => {
     const auth = getAuth();
     const { user, signInWithGoogle, signInWithGithub, logout } = useAuth();
 
-    /* const handleRegistration = (e) => {
-        e.preventDefault();
-        console.log(email, password);
-    }
- */
     const handleUserEmail = (e) => {
         setEmail(e.target.value);
     }
