@@ -12,13 +12,6 @@
     background-color: #222;
     color: #fff;
 }
-
-@media only screen and (max-width: 768px) {
-    .navbar-container {
-        display: flex;
-        flex-direction: column;
-    }
-}
 .user-img {
     width: 36px;
     border: 1px solid gray;

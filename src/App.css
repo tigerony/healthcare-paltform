@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 768px) {
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
