@@ -2,13 +2,16 @@
 import { faCheckSquare } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import './About.css';
 
 const checkSq = <FontAwesomeIcon icon={faCheckSquare} />;
 
 const About = () => {
     return (
         <div className="container my-5">
-            <p className="fs-1 fw-bold text-info text-center mb-5">Revive Plus</p>
+            <div className="cover-banner">
+                <p className="fs-1 fw-bold text-info text-center mb-5">Revive Plus</p>
+            </div>
             <div>
                 <h3>Who We Are?</h3>
                 <p>We are amongst the largest hospital consultants in the world. We are the planning, implementation and operations management arm of the Revive Plus Group, Asia’s largest integrated healthcare services provider. We are the trusted advisor of investors, Governments and other entities who wish to establish world-class healthcare facilities or improve the clinical quality and operating efficiencies of existing healthcare facilities. Our healthcare consulting assignments across the globe are a testimony to our ability to work effectively with the “local” people, respecting their social, cultural and traditional ways. We have worked on establishing and operating healthcare facilities spread across culturally diverse geographies. We are part of a world-class institution which has many firsts to its credit in Bangladesh and the Asian region. We have a domain expertise of over quarter of a century in healthcare. Revive Plus is one group in the world, to have a comprehensive and leading presence across the entire healthcare space - primary, secondary and tertiary care, pharmacy operations, health insurance, healthcare consulting, health informatics, nursing education and post graduate training for doctors.</p>
