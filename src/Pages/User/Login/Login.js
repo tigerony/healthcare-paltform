@@ -39,7 +39,7 @@ const Login = () => {
     }
 
     return (
-        <div className="container my-5 py-5 form-container">
+        <div className="container my-5 form-container">
             <div className="shadow-lg rounded-3 mx-auto user-form">
                 {user.email ? <div className="text-center my-4">
                     <h3 className="mb-4 text-primary text-start">Logged in as</h3>

@@ -2,11 +2,11 @@
 import { faCheckSquare } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import './About.css';
 
 const checkSq = <FontAwesomeIcon icon={faCheckSquare} />;
 
 const About = () => {
+
     return (
         <div className="container my-5">
             <div className="cover-banner">

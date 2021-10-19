@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Product.css';
 
 const Product = (props) => {
     const { id, name, image, price } = props.product;
