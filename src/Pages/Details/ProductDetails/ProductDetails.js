@@ -1,11 +1,12 @@
 import React from 'react';
 
-const ServiceDetails = () => {
+const ProductDetails = () => {
+
     return (
         <div className="container my-5">
-            <h6>Service details of </h6>
+            <h3>Product details of </h3>
         </div>
     );
 };
 
-export default ServiceDetails;
+export default ProductDetails;

@@ -19,19 +19,19 @@ const Header = () => {
     }
 
     return (
-        <Navbar bg="light" variant="light" fixed="top">
-            <Container className="navbar-container">
+        <Navbar bg="light" variant="light" sticky="top">
+            <Container className="flex-column flex-md-row">
                 <img style={{ width: '48px', padding: '4px' }} src={logo} alt="" />
-                <Nav>
+                <Nav className="text-center flex-column flex-sm-row my-2 my-sm-2 my-md-0">
                     <NavLink to="/home">Home</NavLink>
                     <NavLink to="/services">Services</NavLink>
                     <NavLink to="/doctors">Doctors</NavLink>
                     <NavLink to="/shop">Shop</NavLink>
                     <NavLink to="/about">About</NavLink>
                 </Nav>
-                {user.email ? <div className="d-flex align-items-center">
-                    <h5 className="mx-2">{user.displayName}</h5>
-                    <img className="mx-2 user-img" src={user.photoURL} alt="" />
+                {user.email ? <div className="d-flex align-items-center my-2 my-md-0">
+                    <h5 className="mx-2 text-primary fw-bold m-0">{user.displayName}</h5>
+                    <img className="mx-2 user-icon" src={user.photoURL} alt="" />
                     <button className="btn btn-outline-dark" onClick={logout}>Logout</button>
                 </div>
                     : <div>
@@ -44,3 +44,8 @@ const Header = () => {
 };
 
 export default Header;
+
+/*
+
+className="d-flex align-items-center"
+*/
