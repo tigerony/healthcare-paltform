@@ -14,7 +14,7 @@ const Products = () => {
     return (
         <div className="container my-5">
             <h2 className="text-center text-info my-5">Available Products</h2>
-            <Row xs={1} md={2} lg={4} className="text-center g-5">
+            <Row xs={1} md={2} lg={3} xl={4} className="text-center g-5">
                 {
                     products.map(product => <Product
                         key={product.id}

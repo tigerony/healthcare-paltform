@@ -20,7 +20,7 @@ const ServiceDetails = () => {
 
     return (
         <div className="container my-5">
-            <div className="d-flex align-items-start justify-content-center srv-detail-card">
+            <div className="d-sm-flex srv-detail-card px-3 px-sm-0">
                 <div>
                     <img src={details?.image} alt="" />
                 </div>
