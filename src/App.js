@@ -14,7 +14,6 @@ import AuthProvider from './contexts/AuthProvider';
 import DoctorDetails from './Pages/Details/DoctorDetails/DoctorDetails';
 import PrivateRoute from './Pages/User/PrivateRoute/PrivateRoute';
 import Products from './Pages/Landing/Shop/Products/Products';
-import Navigation from './Pages/Shared/Header/Navigation';
 import ProductDetails from './Pages/Details/ProductDetails/ProductDetails';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
       <AuthProvider>
         <BrowserRouter>
           <Header></Header>
-          {/* <Navigation></Navigation> */}
           <Switch>
             <Route exact path="/">
               <Home></Home>
