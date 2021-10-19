@@ -14,6 +14,8 @@ import AuthProvider from './contexts/AuthProvider';
 import DoctorDetails from './Pages/Details/DoctorDetails/DoctorDetails';
 import PrivateRoute from './Pages/User/PrivateRoute/PrivateRoute';
 import Products from './Pages/Landing/Shop/Products/Products';
+import Navigation from './Pages/Shared/Header/Navigation';
+import ProductDetails from './Pages/Details/ProductDetails/ProductDetails';
 
 function App() {
 
@@ -22,6 +24,7 @@ function App() {
       <AuthProvider>
         <BrowserRouter>
           <Header></Header>
+          {/* <Navigation></Navigation> */}
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -32,6 +35,9 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
+            <PrivateRoute path="/services/:svId">
+              <Services></Services>
+            </PrivateRoute>
             <Route exact path="/doctors">
               <Doctors></Doctors>
             </Route>
@@ -41,6 +47,9 @@ function App() {
             <Route path="/shop">
               <Products></Products>
             </Route>
+            <PrivateRoute path="/products/:pdId">
+              <ProductDetails></ProductDetails>
+            </PrivateRoute>
             <Route path="/about">
               <About></About>
             </Route>
@@ -57,40 +66,6 @@ function App() {
           <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
-
-      {/* <BrowserRouter>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/services">
-            <Services></Services>
-          </Route>
-          <Route exact path="/doctors">
-            <Doctors></Doctors>
-          </Route>
-          <Route exact path="/doctors/:docId">
-            <DoctorDetails></DoctorDetails>
-          </Route>
-          <Route path="/about">
-            <About></About>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/register">
-            <Register></Register>
-          </Route>
-          <Route exact path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </BrowserRouter> */}
     </div>
   );
 }

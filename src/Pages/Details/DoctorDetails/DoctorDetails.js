@@ -6,7 +6,7 @@ const DoctorDetails = () => {
 
     return (
         <div className="container my-5 py-4">
-            <h5>this is doctor details of {docId}</h5>
+            <h5>Doctor details of {docId}</h5>
         </div>
     );
 };

@@ -12,7 +12,7 @@ const Products = () => {
     }, []);
 
     return (
-        <div className="container my-5 py-4">
+        <div className="container my-5">
             <h2 className="text-center text-info my-5">Available Products</h2>
             <Row xs={1} md={2} lg={4} className="text-center g-5">
                 {

@@ -5,6 +5,7 @@ import banner2 from '../../../images/banner/banner-2.jpg';
 import banner3 from '../../../images/banner/banner-3.jpg';
 
 const Banner = () => {
+
     return (
         <div className="w-100">
             <Carousel variant="light">
