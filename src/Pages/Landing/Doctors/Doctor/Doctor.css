@@ -1,6 +1,10 @@
-.item-card {
+.doc-card {
     transition: 0.3s;
 }
-.item-card:hover {
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+.doc-card:hover {
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+}
+.doc-card-body {
+    background-color: whitesmoke;
+    border-radius: 0 0 4px 4px;
 }
