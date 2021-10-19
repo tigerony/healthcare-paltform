@@ -15,23 +15,24 @@ const useFirebase = () => {
 
     const signInWithGoogle = () => {
         signInWithPopup(auth, googleProvider)
-            .then(result => {
-                console.log(result.user);
-                setUser(result.user);
-            })
-            .catch(error => {
-                setError(error.message);
-            })
-            .finally(() => {
-                setLoading(false);
-            })
+        /* .then(result => {
+            setUser(result.user);
+        })
+        .catch(error => {
+            setError(error.message);
+        })
+        .finally(() => {
+            setLoading(false);
+        }) */
     };
 
     const signInWithGithub = () => {
         signInWithPopup(auth, githubProvider)
             .then(res => {
-                console.log(res.user);
                 setUser(res.user);
+            })
+            .catch(error => {
+                setError(error.message);
             })
             .finally(() => {
                 setLoading(false);

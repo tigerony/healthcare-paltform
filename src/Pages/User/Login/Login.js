@@ -1,9 +1,14 @@
 import { getAuth, signInWithEmailAndPassword } from '@firebase/auth';
+import { faGithub, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css';
+
+const googleIcon = <FontAwesomeIcon icon={faGoogle} />;
+const githubIcon = <FontAwesomeIcon icon={faGithub} />;
 
 const Login = () => {
     const auth = getAuth();
@@ -12,6 +17,7 @@ const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
     const handleUserEmail = (e) => {
         setEmail(e.target.value);
@@ -25,46 +31,50 @@ const Login = () => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                console.log('Successfully logged in ', result.user);
+
             })
             .catch(error => {
-                console.log(error.message);
+                setError(error.message);
             })
     }
 
     return (
         <div className="container my-5 py-5 form-container">
             <div className="shadow-lg rounded-3 mx-auto user-form">
-                <h3 className="mb-4 text-primary">Login</h3>
-                <Form onSubmit={signInWithEmail}>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control onBlur={handleUserEmail} type="email" placeholder="Enter email" required />
-                    </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control onBlur={handleUserPassword} type="password" placeholder="Enter password" required />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Login
-                    </Button>
-                </Form>
-                <div className="text-center my-4">
-                    <p>or</p>
-                    {user.email ? <div>
-                        <img src={user.photoURL} alt="" />
-                        <h3>{user.displayName}</h3>
-                        <button className="btn btn-outline-dark" onClick={logout}>Logout</button>
-                    </div>
-                        :
-                        <div>
-                            <button className="btn btn-secondary me-2" onClick={signInWithGoogle}>Google Sign In</button>
-                            <button className="btn btn-secondary" onClick={signInWithGithub}>Github Sign In</button>
-                            <br />
-                            <p className="text-start mt-3">New to Revive Plus? <Link to="/register">Register</Link>  as a new user.</p>
-                        </div>}
+                {user.email ? <div className="text-center my-4">
+                    <h3 className="mb-4 text-primary text-start">Logged in as</h3>
+                    <img src={user.photoURL} style={{ width: '96px' }} alt="" />
+                    <h3>{user.displayName}</h3>
+                    <p>{user.email}</p>
+                    <button className="btn btn-outline-dark my-3" onClick={logout}>Logout</button>
                 </div>
+                    :
+                    <div>
+                        <h3 className="mb-4 text-primary">Login</h3>
+                        <Form onSubmit={signInWithEmail}>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Label>Email address</Form.Label>
+                                <Form.Control onBlur={handleUserEmail} type="email" placeholder="Enter email" required />
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                <Form.Label>Password</Form.Label>
+                                <Form.Control onBlur={handleUserPassword} type="password" placeholder="Enter password" required />
+                            </Form.Group>
+                            <Button variant="primary" type="submit">
+                                Login
+                            </Button>
+                        </Form>
+
+                        <div className="text-center my-4">
+                            <p>or</p>
+                            <button className="btn btn-outline-secondary fs-4 me-4" onClick={signInWithGoogle}>{googleIcon}</button>
+                            <button className="btn btn-outline-secondary fs-4" onClick={signInWithGithub}>{githubIcon}</button>
+                            <br />
+                            <p className="text-start mt-3">New to Revive Plus? <Link to="/register" className="redir-link">Register</Link>  as a new user.</p>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     );

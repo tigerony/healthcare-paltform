@@ -6,3 +6,7 @@
     padding: 48px 24px;
     
 }
+.redir-link:hover {
+    background-color: #eee;
+    text-decoration: none;
+}

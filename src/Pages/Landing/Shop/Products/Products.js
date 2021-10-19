@@ -4,7 +4,6 @@ import Product from '../Product/Product';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
-    console.log(products);
 
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/products.json')

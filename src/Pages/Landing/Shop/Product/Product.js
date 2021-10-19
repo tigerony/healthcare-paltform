@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Product = (props) => {
     const { name, image, price } = props.product;
-    console.log(props);
 
     return (
         <Col>
