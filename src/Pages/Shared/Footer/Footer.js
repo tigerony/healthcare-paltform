@@ -49,7 +49,7 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <div className="text-center mt-5">
-                    <p><small>Copyright 2021, Revive Plus</small></p>
+                    <p className="text-muted"><small>Copyright 2021, Revive Plus</small></p>
                 </div>
             </div>
         </footer>

@@ -9,7 +9,7 @@ const Doctors = () => {
         fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/doctors.json')
             .then(response => response.json())
             .then(data => setDoctors(data));
-    }, [])
+    }, []);
 
     return (
         <div className="container my-5">

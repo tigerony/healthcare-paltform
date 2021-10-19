@@ -5,6 +5,7 @@ import Services from '../Services/Services/Services';
 import Products from '../Shop/Products/Products';
 
 const Home = () => {
+
     return (
         <div>
             <Banner></Banner>

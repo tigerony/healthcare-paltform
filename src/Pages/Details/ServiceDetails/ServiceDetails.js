@@ -4,6 +4,7 @@ import './ServiceDetails.css';
 
 const ServiceDetails = () => {
     const { srvId } = useParams();
+
     const [serviceDetails, setServiceDetails] = useState([]);
     const [details, setDetails] = useState({});
 

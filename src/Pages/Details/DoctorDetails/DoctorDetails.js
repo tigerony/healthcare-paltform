@@ -5,19 +5,11 @@ import './DoctorDetails.css';
 
 const DoctorDetails = () => {
     const { docId } = useParams();
+
     const [docDetails, setDocDetails] = useState([]);
     const [details, setDetails] = useState({});
 
     const coverImg = `${details?.imgWide}`;
-    console.log(coverImg);
-
-    const coverStyle = {
-        height: '50vh',
-        backgroundImage: 'url(' + { coverImg } + ')',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed'
-    };
 
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/doctors.json')
