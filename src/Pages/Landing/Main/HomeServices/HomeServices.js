@@ -30,7 +30,7 @@ const HomeServices = () => {
                 }
                 <Col className="srv-more">
                     <Link to="/services">
-                        <Card className="p-3 h-100 rounded-3 shadow-sm text-center srv-more-card">
+                        <Card className="p-3 h-100 rounded-3 shadow-sm border-3 text-center srv-more-card">
                             <Card.Img variant="top" src={srvImg} className="" style={{ width: '128px', height: '128px', margin: '0 auto' }} />
                             <Card.Body>
                                 <p className="fs-4 fw-bold text-center">More services {goIcon}</p>
@@ -39,9 +39,6 @@ const HomeServices = () => {
                     </Link>
                 </Col>
             </Row>
-            {/* <Link to="/services">
-                <button className="btn btn-primary my-3">See all services</button>
-            </Link> */}
         </div>
     );
 };

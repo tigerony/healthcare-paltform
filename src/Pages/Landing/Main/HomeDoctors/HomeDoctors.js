@@ -30,7 +30,7 @@ const HomeDoctors = () => {
                 }
                 <Col className="doc-more">
                     <Link to="/doctors">
-                        <Card className="h-100 rounded-3 shadow-sm text-center doc-more-card">
+                        <Card className="h-100 rounded-3 border-3 shadow-sm text-center doc-more-card">
                             <Card.Img variant="top" src={docImg} />
                             <Card.Body>
                                 <p className="fs-2 fw-bold text-center">More doctors {goIcon}</p>
@@ -39,9 +39,6 @@ const HomeDoctors = () => {
                     </Link>
                 </Col>
             </Row>
-            {/* <Link to="/doctors">
-                <button className="btn btn-primary my-3">See all doctors</button>
-            </Link> */}
         </div>
     );
 };
