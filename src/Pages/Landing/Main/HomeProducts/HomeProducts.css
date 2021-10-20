@@ -1,0 +1,7 @@
+.pd-more a {
+    text-decoration: none;
+}
+.pd-more-card:hover {
+    border: 3px solid;
+    border-color: blueviolet;
+}

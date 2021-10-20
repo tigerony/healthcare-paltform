@@ -1,0 +1,7 @@
+.doc-more a {
+    text-decoration: none;
+}
+.doc-more-card:hover {
+    border: 3px solid;
+    border-color: blueviolet;
+}
