@@ -14,7 +14,7 @@ const HomeProducts = () => {
 
     return (
         <div className="container my-5">
-            <h2 className="text-center text-info my-5">Top Selling Products</h2>
+            <h2 className="text-center text-info my-5">Featured Products</h2>
             <Row xs={1} sm={2} md={3} lg={4} className="g-5">
                 {
                     products.map(product => <Product
