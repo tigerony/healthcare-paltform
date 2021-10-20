@@ -1,7 +1,9 @@
 .srv-more a {
     text-decoration: none;
 }
+.srv-more-card {
+    transition: 0.4s;
+}
 .srv-more-card:hover {
-    border: 3px solid;
     border-color: blueviolet;
 }

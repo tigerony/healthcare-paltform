@@ -30,8 +30,8 @@ const HomeProducts = () => {
                 }
                 <Col className="pd-more">
                     <Link to="/shop">
-                        <Card className="h-100 rounded-3 shadow-sm text-center pd-more-card">
-                            <Card.Img variant="top" className="" src={pdImg} />
+                        <Card className="h-100 rounded-3 border-3 shadow-sm text-center pd-more-card">
+                            <Card.Img variant="top" src={pdImg} />
                             <Card.Body>
                                 <p className="fs-2 fw-bold text-center mt-md-5 mt-lg-5 mt-xl-0">More products {goIcon}</p>
                             </Card.Body>
@@ -39,9 +39,6 @@ const HomeProducts = () => {
                     </Link>
                 </Col>
             </Row>
-            {/* <Link to="/shop">
-                <button className="btn btn-primary my-3">See all products</button>
-            </Link> */}
         </div>
     );
 };
