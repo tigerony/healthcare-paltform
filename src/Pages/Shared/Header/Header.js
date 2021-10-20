@@ -19,7 +19,7 @@ const Header = () => {
     }
 
     return (
-        <Navbar bg="light" variant="light" sticky="top">
+        <Navbar bg="light" variant="light">
             <Container className="flex-column flex-md-row">
                 <img style={{ width: '48px', padding: '4px' }} src={logo} alt="" />
                 <Nav className="text-center flex-column flex-sm-row my-2 my-sm-2 my-md-0">

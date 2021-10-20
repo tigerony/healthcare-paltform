@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Service from '../../Services/Service/Service';
+import srvImg from '../../../../images/services.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import './HomeServices.css';
+
+const goIcon = <FontAwesomeIcon icon={faChevronCircleRight} />;
 
 const HomeServices = () => {
     const [services, setServices] = useState([]);
@@ -22,10 +28,20 @@ const HomeServices = () => {
                         service={service}
                     ></Service>)
                 }
+                <Col className="srv-more">
+                    <Link to="/services">
+                        <Card className="p-3 h-100 rounded-3 shadow-sm text-center srv-more-card">
+                            <Card.Img variant="top" src={srvImg} className="" style={{ width: '128px', height: '128px', margin: '0 auto' }} />
+                            <Card.Body>
+                                <p className="fs-4 fw-bold text-center">More services {goIcon}</p>
+                            </Card.Body>
+                        </Card>
+                    </Link>
+                </Col>
             </Row>
-            <Link to="/services">
+            {/* <Link to="/services">
                 <button className="btn btn-primary my-3">See all services</button>
-            </Link>
+            </Link> */}
         </div>
     );
 };
