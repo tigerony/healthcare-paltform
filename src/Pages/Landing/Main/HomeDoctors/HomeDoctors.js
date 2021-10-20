@@ -9,12 +9,12 @@ const HomeDoctors = () => {
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/doctors.json')
             .then(res => res.json())
-            .then(data => setDoctors(data.slice(0, 4)));
+            .then(data => setDoctors(data.slice(0, 6)));
     }, []);
 
     return (
         <div className="container my-5">
-            <h2 className="text-center text-info my-5">Our doctors [home]</h2>
+            <h2 className="text-center text-info my-5">Top Lead Doctors</h2>
             <Row xs={1} sm={2} md={3} lg={3} className="g-5">
                 {
                     doctors.map(doctor => <Doctor
