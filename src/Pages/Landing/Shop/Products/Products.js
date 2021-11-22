@@ -6,7 +6,7 @@ const Products = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/products.json')
+        fetch('https://raw.githubusercontent.com/imprantu/revive-plus-data/main/products.json')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, []);
