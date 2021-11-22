@@ -13,7 +13,7 @@ const HomeDoctors = () => {
     const [doctors, setDoctors] = useState([]);
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/doctors.json')
+        fetch('https://raw.githubusercontent.com/imprantu/revive-plus-data/main/doctors.json')
             .then(res => res.json())
             .then(data => setDoctors(data.slice(0, 5)));
     }, []);

@@ -13,7 +13,7 @@ const HomeServices = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/services.json')
+        fetch('https://raw.githubusercontent.com/imprantu/revive-plus-data/main/services.json')
             .then(res => res.json())
             .then(data => setServices(data.slice(0, 4)));
     }, []);

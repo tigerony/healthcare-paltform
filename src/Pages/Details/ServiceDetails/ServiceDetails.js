@@ -9,7 +9,7 @@ const ServiceDetails = () => {
     const [details, setDetails] = useState({});
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/services.json')
+        fetch('https://raw.githubusercontent.com/imprantu/revive-plus-data/main/services.json')
             .then(res => res.json())
             .then(data => setServiceDetails(data));
     }, []);

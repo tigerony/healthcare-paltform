@@ -12,7 +12,7 @@ This medical health related project [Revive Plus](https://revive-plus.web.app/) 
 
 ### Resources (API)
 
-- [Doctors API](https://raw.githubusercontent.com/imprantu/revive-plus/main/doctors.json)
-- [Services API](https://raw.githubusercontent.com/imprantu/revive-plus/main/services.json)
-- [Products API](https://raw.githubusercontent.com/imprantu/revive-plus/main/products.json)
+- [Doctors API](https://raw.githubusercontent.com/imprantu/revive-plus-data/main/doctors.json)
+- [Services API](https://raw.githubusercontent.com/imprantu/revive-plus-data/main/services.json)
+- [Products API](https://raw.githubusercontent.com/imprantu/revive-plus-data/main/products.json)
 

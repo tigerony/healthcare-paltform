@@ -6,7 +6,7 @@ const Doctors = () => {
     const [doctors, setDoctors] = useState([]);
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/doctors.json')
+        fetch('https://raw.githubusercontent.com/imprantu/revive-plus-data/main/doctors.json')
             .then(response => response.json())
             .then(data => setDoctors(data));
     }, []);

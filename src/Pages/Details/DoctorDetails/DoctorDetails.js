@@ -12,7 +12,7 @@ const DoctorDetails = () => {
     const coverImg = `${details?.imgWide}`;
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/imprantu/revive-plus/main/doctors.json')
+        fetch('https://raw.githubusercontent.com/imprantu/revive-plus-data/main/doctors.json')
             .then(res => res.json())
             .then(data => setDocDetails(data));
     }, []);
