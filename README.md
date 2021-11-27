@@ -4,11 +4,11 @@ This medical health related project [Revive Plus](https://revive-plus.web.app/) 
 
 ## Project Overview
 
-- Highly professional and qualified doctors are available
-- Offering total 8 major services
+- Users can know about provided service and available doctors
+- Offering total 8 major health services
 - Medical shop available with mostly needed goods
 - Modern medical equipments, digital laboratory available
-- 24/7 ambulance service also available in case of emergency
+- Registered users can see services and doctors info in details
 
 ### Resources (API)
 
